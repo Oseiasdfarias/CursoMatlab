@@ -9,7 +9,7 @@ y = 2*sin(3*t);
 figure
 plot(t, y, 'b--', 'linewidth', 2), grid;
 title('Plotando Gráficos do Seno e Cosseno');
-legend('Seno', 'Cosseno', 'Location', 'southwest');
+legend('Seno', 'Location', 'southwest');
 
 xlabel('Tempo(s)');
 ylabel('Amplitude');
