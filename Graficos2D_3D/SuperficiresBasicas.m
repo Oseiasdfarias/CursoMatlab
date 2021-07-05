@@ -53,4 +53,25 @@ Z2 = Z*r;
 figure
 surf(X2+r, Y2-r, Z2);
 
+% Muda a fonte de forma geral no gráfico
+%set(gca(), 'Fontsize', 13);
+title('Esféra', 'FontSize', 17);
+xlabel('Eixo x', 'FontSize', 14);
+ylabel('Eixo y', 'FontSize', 14);
+zlabel('Eixo z', 'FontSize', 14);
+
+%% 
+% Inverter o sentido dos Eixos do gráficos
+
+t = 0:0.1:10;
+h = 10.*t.^2 - 2.*t;
+
+figure
+plot(t, h, 'k', 'linewidth', 1.5); hold on
+title('Função', 'FontSize', 17);
+xlabel('Tempo(s)', 'FontSize', 14);
+ylabel('Altura de Queda(m)', 'FontSize', 14);
+set(gca(), 'ydir', 'reverse');
+
+
 
